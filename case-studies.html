@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Studies — Remolda AI Transformation</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .case-full {
+      padding: 80px 0;
+    }
+    .case-full-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: 48px;
+      margin-bottom: 32px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 48px;
+      align-items: start;
+      transition: var(--transition);
+    }
+    .case-full-card:hover {
+      border-color: rgba(232,168,56,0.3);
+    }
+    .case-full-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .case-full-emoji {
+      font-size: 40px;
+    }
+    .case-full-header h3 {
+      font-size: 24px;
+    }
+    .case-results {
+      display: flex;
+      gap: 24px;
+      margin: 24px 0;
+      flex-wrap: wrap;
+    }
+    .case-result-item {
+      background: rgba(232,168,56,0.08);
+      border: 1px solid rgba(232,168,56,0.2);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      text-align: center;
+    }
+    .case-result-item .result-num {
+      font-family: var(--font-display);
+      font-size: 28px;
+      font-weight: 800;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .case-result-item .result-label {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .case-sidebar {
+      min-width: 200px;
+    }
+    .case-meta-item {
+      margin-bottom: 20px;
+    }
+    .case-meta-item .meta-label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent-primary);
+      margin-bottom: 4px;
+    }
+    .case-meta-item .meta-value {
+      font-size: 15px;
+      color: var(--text-secondary);
+    }
+    @media (max-width: 768px) {
+      .case-full-card { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo"><div class="logo-mark">R</div>Remolda</a>
+        <ul class="nav-links">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="methodology.html">Methodology</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="contact.html" class="btn btn-outline">Contact</a>
+          <a href="contact.html" class="btn btn-primary">Book a Call</a>
+        </div>
+        <div class="nav-toggle"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="badge">Client Results</span>
+      <h1>Results That Speak</h1>
+      <p>Real outcomes from real deployments. No vanity metrics, no cherry-picked quotes — just measurable business impact.</p>
+    </div>
+  </section>
+
+  <section class="case-full">
+    <div class="container">
+
+      <div class="case-full-card fade-up" id="meridian">
+        <div>
+          <div class="case-full-header">
+            <div class="case-full-emoji">⚖️</div>
+            <div>
+              <span class="case-industry-tag">Professional Services</span>
+              <h3>Meridian Law Group: AI-Powered Contract Review</h3>
+            </div>
+          </div>
+          <p>Meridian, a mid-sized corporate law firm with 120 attorneys, was spending 30–40% of associate time on first-pass contract review — work that was billable but increasingly commoditized. They needed to either lower costs or redirect that time to higher-value advisory work.</p>
+          <p style="margin-top: 12px;">We deployed a custom RAG-based contract analysis system trained on Meridian's 15-year clause library. The system flags risks, suggests standard alternatives, and generates first-draft redlines — all in the firm's own voice and precedent style.</p>
+          <div class="case-results">
+            <div class="case-result-item">
+              <div class="result-num">68%</div>
+              <div class="result-label">reduction in review time</div>
+            </div>
+            <div class="case-result-item">
+              <div class="result-num">80%</div>
+              <div class="result-label">of routine contracts automated</div>
+            </div>
+            <div class="case-result-item">
+              <div class="result-num">$1.2M</div>
+              <div class="result-label">annual cost savings</div>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-outline">Discuss a Similar Project →</a>
+        </div>
+        <div class="case-sidebar">
+          <div class="case-meta-item">
+            <div class="meta-label">Industry</div>
+            <div class="meta-value">Professional Services</div>
+          </div>
+          <div class="case-meta-item">
+            <div class="meta-label">Services Used</div>
+            <div class="meta-value">Custom AI · Process Automation</div>
+          </div>
+          <div class="case-meta-item">
+            <div class="meta-label">Timeline</div>
+            <div class="meta-value">14 weeks</div>
+          </div>
+          <div class="case-meta-item">
+            <div class="meta-label">Company Size</div>
+            <div class="meta-value">120 attorneys</div>
+          </div>
+          <div class="case-meta-item">
+            <div class="meta-label">Location</div>
+            <div class="meta-value">Toronto, CA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-full-card fade-up" id="nova">
+        <div>
+          <div class="case-full-header">
+            <div class="case-full-emoji">🛒</div>
+            <div>
+              <span class="case-industry-tag">E-commerce</span>
+              <h3>NovaTech Retail: AI Personalization at Scale</h3>
+            </div>
+          </div>
+          <p>NovaTech Retail operates an e-commerce platform with 2.4M active customers and a catalog of 85,000 SKUs. Despite strong traffic, conversion rates were flat and average order value was declining. Their existing recommendation engine was rules-based and hadn't been updated in three years.</p>
+          <p style="margin-top: 12px;">We replaced their legacy recommendation system with a real-time ML personalization engine, integrated dynamic email triggers, and rebuilt their search ranking algorithm. The entire platform now adapts to individual user behavior in real time.</p>
+          <div class="case-results">
+            <div class="case-result-item">
+              <div class="result-num">+34%</div>
+              <div class="result-label">revenue uplift</div>
+            </div>
+            <div class="case-result-item">
+              <div class="result-num">+2.4M</div>
+              <div class="result-label">annual incremental revenue</div>
+            </div>
+            <div class="case-result-item">
+              <div class="result-num">+22%</div>
+              <div class="result-label">average order value</div>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-outline">Discuss a Similar Project →</a>
+        </div>
+        <div class="case-sidebar">
+          <div class="case-meta-item">
+            <div class="meta-label">Industry</div>
+            <div class="meta-value">E-commerce & Retail</div>
+          </div>
+          <div class="case-meta-item">
+            <div class="meta-label">Services Used</div>
+            <div class="meta-value">Custom AI · Data & Analytics</div>
+          </div>
+          <div class="case-meta-item">
+            <div class="meta-label">Timeline</div>
+            <div class="meta-value">20 weeks</div>
+          </div>
+          <div class="case-meta-item">
+            <div class="meta-label">Company Size</div>
+            <div class="meta-value">2.4M customers</div>
+          </div>
+          <div class="case-meta-item">
+            <div class="meta-label">Location</div>
+            <div class="meta-value">Vancouver, CA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-full-card fade-up" id="vantage">
+        <div>
+          <div class="case-full-header">
+            <div class="case-full-emoji">🏥</div>
+            <div>
+              <span class="case-industry-tag">Healthcare</span>
+              <h3>Vantage Health: AI Documentation & Clinical Efficiency</h3>
+            </div>
+          </div>
+          <p>Vantage Health operates 12 outpatient clinics with 340 clinical staff. Administrative burden — particularly documentation — was consuming nearly 3 hours per clinician per day, driving burnout and limiting patient capacity. Previous EHR optimization had hit its ceiling.</p>
+          <p style="margin-top: 12px;">We deployed ambient AI documentation that transcribes and structures clinical notes in real time, integrated with their existing EHR. Combined with an AI-powered patient intake and scheduling system, we fundamentally changed the administrative load on clinical staff.</p>
+          <div class="case-results">
+            <div class="case-result-item">
+              <div class="result-num">42%</div>
+              <div class="result-label">less admin time per clinician</div>
+            </div>
+            <div class="case-result-item">
+              <div class="result-num">14,000</div>
+              <div class="result-label">clinical hours saved annually</div>
+            </div>
+            <div class="case-result-item">
+              <div class="result-num">+18%</div>
+              <div class="result-label">patient capacity increase</div>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-outline">Discuss a Similar Project →</a>
+        </div>
+        <div class="case-sidebar">
+          <div class="case-meta-item">
+            <div class="meta-label">Industry</div>
+            <div class="meta-value">Healthcare & Pharma</div>
+          </div>
+          <div class="case-meta-item">
+            <div class="meta-label">Services Used</div>
+            <div class="meta-value">AI Agents · Process Automation</div>
+          </div>
+          <div class="case-meta-item">
+            <div class="meta-label">Timeline</div>
+            <div class="meta-value">18 weeks</div>
+          </div>
+          <div class="case-meta-item">
+            <div class="meta-label">Company Size</div>
+            <div class="meta-value">340 clinical staff</div>
+          </div>
+          <div class="case-meta-item">
+            <div class="meta-label">Location</div>
+            <div class="meta-value">Montreal, CA</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-block fade-up">
+        <h2>Want Results Like These?</h2>
+        <p>Every case study started with a 30-minute discovery call. Yours can too.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary btn-lg">Book a Discovery Call →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo"><div class="logo-mark">R</div>Remolda</a>
+          <p>AI Transformation. Reimagined.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link">in</a>
+            <a href="#" class="social-link">𝕏</a>
+            <a href="#" class="social-link">gh</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html#strategy">AI Strategy</a></li>
+            <li><a href="services.html#automation">Process Automation</a></li>
+            <li><a href="services.html#agents">AI Agents</a></li>
+            <li><a href="services.html#data">Data & Analytics</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="methodology.html">Methodology</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-legal">© 2026 Innova Consulting Group Inc. d/b/a Remolda. All rights reserved.</p>
+        <div class="footer-lang">
+          <button class="lang-btn active">EN</button>
+          <button class="lang-btn">FR</button>
+          <button class="lang-btn">RU</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

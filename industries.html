@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industries — Remolda AI Transformation</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .industries-full { padding: 80px 0; }
+    .industry-full-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: 56px;
+      margin-bottom: 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center;
+      transition: var(--transition);
+    }
+    .industry-full-card:hover { border-color: rgba(232,168,56,0.3); }
+    .industry-full-header { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+    .industry-full-emoji { font-size: 44px; }
+    .industry-full-header h3 { font-size: 26px; }
+    .industry-metrics-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .metric-card {
+      background: var(--bg-tertiary);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      text-align: center;
+    }
+    .metric-card .mn { font-family: var(--font-display); font-size: 28px; font-weight: 800; background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; margin-bottom: 4px; }
+    .metric-card .ml { font-size: 12px; color: var(--text-muted); }
+    @media (max-width: 900px) { .industry-full-card { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo"><div class="logo-mark">R</div>Remolda</a>
+        <ul class="nav-links">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="methodology.html">Methodology</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="contact.html" class="btn btn-outline">Contact</a>
+          <a href="contact.html" class="btn btn-primary">Book a Call</a>
+        </div>
+        <div class="nav-toggle"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="badge">Deep Vertical Expertise</span>
+      <h1>Industries We Serve</h1>
+      <p>Seven sectors. Deep domain knowledge. AI solutions built for the specific challenges, data, and compliance requirements of your industry.</p>
+    </div>
+  </section>
+
+  <section class="industries-full">
+    <div class="container">
+
+      <div class="industry-full-card fade-up" id="professional">
+        <div>
+          <div class="industry-full-header">
+            <div class="industry-full-emoji">⚖️</div>
+            <div>
+              <span class="case-industry-tag">Professional Services</span>
+              <h3>Law, Accounting & Advisory</h3>
+            </div>
+          </div>
+          <p>AI transforms the economics of professional services — automating the commodity work so your people can focus on the advice that clients actually pay premium rates for.</p>
+          <div class="industry-challenges" style="margin: 20px 0;">
+            <div class="challenge-item">Contract analysis and document review</div>
+            <div class="challenge-item">Client intake and qualification automation</div>
+            <div class="challenge-item">Knowledge management and institutional memory</div>
+            <div class="challenge-item">Billing optimization and time capture</div>
+          </div>
+          <a href="contact.html" class="btn btn-outline">Explore for Your Firm →</a>
+        </div>
+        <div class="industry-metrics-grid">
+          <div class="metric-card"><div class="mn">68%</div><div class="ml">less document review time</div></div>
+          <div class="metric-card"><div class="mn">80%</div><div class="ml">of routine tasks automated</div></div>
+          <div class="metric-card"><div class="mn">3.2x</div><div class="ml">ROI on AI investment</div></div>
+          <div class="metric-card"><div class="mn">4 wks</div><div class="ml">avg time to first value</div></div>
+        </div>
+      </div>
+
+      <div class="industry-full-card fade-up" id="ecommerce">
+        <div>
+          <div class="industry-full-header">
+            <div class="industry-full-emoji">🛒</div>
+            <div>
+              <span class="case-industry-tag">E-commerce & Retail</span>
+              <h3>Retail & Direct-to-Consumer</h3>
+            </div>
+          </div>
+          <p>In e-commerce, personalization and speed are the only moats left. AI is the engine that makes both possible at scale — without proportionally scaling headcount.</p>
+          <div class="industry-challenges" style="margin: 20px 0;">
+            <div class="challenge-item">Real-time personalization and recommendations</div>
+            <div class="challenge-item">Demand forecasting and inventory optimization</div>
+            <div class="challenge-item">AI-powered customer support at scale</div>
+            <div class="challenge-item">Dynamic pricing and promotion optimization</div>
+          </div>
+          <a href="contact.html" class="btn btn-outline">Explore for Your Store →</a>
+        </div>
+        <div class="industry-metrics-grid">
+          <div class="metric-card"><div class="mn">+34%</div><div class="ml">average revenue lift</div></div>
+          <div class="metric-card"><div class="mn">+22%</div><div class="ml">average order value</div></div>
+          <div class="metric-card"><div class="mn">-40%</div><div class="ml">support ticket volume</div></div>
+          <div class="metric-card"><div class="mn">18%</div><div class="ml">inventory cost reduction</div></div>
+        </div>
+      </div>
+
+      <div class="industry-full-card fade-up" id="financial">
+        <div>
+          <div class="industry-full-header">
+            <div class="industry-full-emoji">💼</div>
+            <div>
+              <span class="case-industry-tag">Financial Services</span>
+              <h3>Banking, Insurance & FinTech</h3>
+            </div>
+          </div>
+          <p>Financial services AI requires a different standard — built for regulatory scrutiny, explainability, and the zero-error tolerance of money. We've built it before.</p>
+          <div class="industry-challenges" style="margin: 20px 0;">
+            <div class="challenge-item">Automated KYC/AML compliance workflows</div>
+            <div class="challenge-item">Real-time fraud detection and risk scoring</div>
+            <div class="challenge-item">Intelligent loan processing and underwriting</div>
+            <div class="challenge-item">AI-assisted wealth management and reporting</div>
+          </div>
+          <a href="contact.html" class="btn btn-outline">Explore for Your Institution →</a>
+        </div>
+        <div class="industry-metrics-grid">
+          <div class="metric-card"><div class="mn">91%</div><div class="ml">compliance accuracy</div></div>
+          <div class="metric-card"><div class="mn">-60%</div><div class="ml">false positive fraud alerts</div></div>
+          <div class="metric-card"><div class="mn">3 days</div><div class="ml">to 4 hours loan processing</div></div>
+          <div class="metric-card"><div class="mn">$2.8M</div><div class="ml">avg annual savings</div></div>
+        </div>
+      </div>
+
+      <div class="industry-full-card fade-up" id="healthcare">
+        <div>
+          <div class="industry-full-header">
+            <div class="industry-full-emoji">🏥</div>
+            <div>
+              <span class="case-industry-tag">Healthcare & Pharma</span>
+              <h3>Clinics, Hospitals & Life Sciences</h3>
+            </div>
+          </div>
+          <p>Healthcare AI must meet a higher bar: HIPAA-compliant, clinically validated, and built with the trust and security that patient data demands. We build it that way from day one.</p>
+          <div class="industry-challenges" style="margin: 20px 0;">
+            <div class="challenge-item">Clinical documentation and coding automation</div>
+            <div class="challenge-item">Patient triage and intake AI</div>
+            <div class="challenge-item">Supply chain and pharmacy inventory</div>
+            <div class="challenge-item">Research data extraction and synthesis</div>
+          </div>
+          <a href="contact.html" class="btn btn-outline">Explore for Your Organization →</a>
+        </div>
+        <div class="industry-metrics-grid">
+          <div class="metric-card"><div class="mn">42%</div><div class="ml">less admin per clinician</div></div>
+          <div class="metric-card"><div class="mn">+18%</div><div class="ml">patient capacity</div></div>
+          <div class="metric-card"><div class="mn">96%</div><div class="ml">coding accuracy</div></div>
+          <div class="metric-card"><div class="mn">14K</div><div class="ml">clinical hours saved/yr</div></div>
+        </div>
+      </div>
+
+      <div class="industry-full-card fade-up" id="manufacturing">
+        <div>
+          <div class="industry-full-header">
+            <div class="industry-full-emoji">🏭</div>
+            <div>
+              <span class="case-industry-tag">Manufacturing & Logistics</span>
+              <h3>Manufacturing, Supply Chain & Logistics</h3>
+            </div>
+          </div>
+          <p>Modern manufacturing runs on data. We help industrial companies put that data to work — predicting failures before they happen, optimizing routes in real time, and ensuring quality at scale.</p>
+          <div class="industry-challenges" style="margin: 20px 0;">
+            <div class="challenge-item">Predictive maintenance and IoT analytics</div>
+            <div class="challenge-item">Supply chain visibility and risk management</div>
+            <div class="challenge-item">Computer vision for quality control</div>
+            <div class="challenge-item">Route and capacity optimization</div>
+          </div>
+          <a href="contact.html" class="btn btn-outline">Explore for Your Operation →</a>
+        </div>
+        <div class="industry-metrics-grid">
+          <div class="metric-card"><div class="mn">-23%</div><div class="ml">unplanned downtime</div></div>
+          <div class="metric-card"><div class="mn">+31%</div><div class="ml">OEE improvement</div></div>
+          <div class="metric-card"><div class="mn">-15%</div><div class="ml">logistics costs</div></div>
+          <div class="metric-card"><div class="mn">99.2%</div><div class="ml">QC accuracy (vs 94%)</div></div>
+        </div>
+      </div>
+
+      <div class="industry-full-card fade-up" id="realestate">
+        <div>
+          <div class="industry-full-header">
+            <div class="industry-full-emoji">🏗️</div>
+            <div>
+              <span class="case-industry-tag">Real Estate & Construction</span>
+              <h3>Real Estate, PropTech & Construction</h3>
+            </div>
+          </div>
+          <p>From lead qualification to project delivery, AI compresses timelines and improves decisions at every stage of the real estate and construction lifecycle.</p>
+          <div class="industry-challenges" style="margin: 20px 0;">
+            <div class="challenge-item">AI-powered lead scoring and nurturing</div>
+            <div class="challenge-item">Automated valuation models (AVM)</div>
+            <div class="challenge-item">Construction timeline and cost forecasting</div>
+            <div class="challenge-item">Lease document intelligence and review</div>
+          </div>
+          <a href="contact.html" class="btn btn-outline">Explore for Your Business →</a>
+        </div>
+        <div class="industry-metrics-grid">
+          <div class="metric-card"><div class="mn">4.7x</div><div class="ml">lead conversion speed</div></div>
+          <div class="metric-card"><div class="mn">-28%</div><div class="ml">project overrun rate</div></div>
+          <div class="metric-card"><div class="mn">2 hrs</div><div class="ml">to automated valuation</div></div>
+          <div class="metric-card"><div class="mn">+42%</div><div class="ml">qualified pipeline growth</div></div>
+        </div>
+      </div>
+
+      <div class="industry-full-card fade-up" id="saas">
+        <div>
+          <div class="industry-full-header">
+            <div class="industry-full-emoji">💻</div>
+            <div>
+              <span class="case-industry-tag">Technology & SaaS</span>
+              <h3>Software, Tech Startups & SaaS</h3>
+            </div>
+          </div>
+          <p>Tech companies face a unique challenge: they understand AI but struggle to build it for their own business. We're the team you bring in when you're too busy shipping product to build the internal AI layer.</p>
+          <div class="industry-challenges" style="margin: 20px 0;">
+            <div class="challenge-item">AI-native product feature development</div>
+            <div class="challenge-item">Churn prediction and expansion revenue signals</div>
+            <div class="challenge-item">Automated customer success workflows</div>
+            <div class="challenge-item">Engineering velocity with AI tooling</div>
+          </div>
+          <a href="contact.html" class="btn btn-outline">Explore for Your Company →</a>
+        </div>
+        <div class="industry-metrics-grid">
+          <div class="metric-card"><div class="mn">-31%</div><div class="ml">churn reduction</div></div>
+          <div class="metric-card"><div class="mn">+28%</div><div class="ml">expansion revenue</div></div>
+          <div class="metric-card"><div class="mn">2.4x</div><div class="ml">engineering throughput</div></div>
+          <div class="metric-card"><div class="mn">6 wks</div><div class="ml">to AI feature in production</div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-block fade-up">
+        <h2>Your Industry. Your Challenge.</h2>
+        <p>Tell us what you're trying to solve. We'll tell you honestly whether AI is the right answer — and if it is, how we'd approach it.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary btn-lg">Start the Conversation →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo"><div class="logo-mark">R</div>Remolda</a>
+          <p>AI Transformation. Reimagined.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link">in</a>
+            <a href="#" class="social-link">𝕏</a>
+            <a href="#" class="social-link">gh</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html#strategy">AI Strategy</a></li>
+            <li><a href="services.html#automation">Process Automation</a></li>
+            <li><a href="services.html#agents">AI Agents</a></li>
+            <li><a href="services.html#data">Data & Analytics</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="methodology.html">Methodology</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-legal">© 2026 Innova Consulting Group Inc. d/b/a Remolda. All rights reserved.</p>
+        <div class="footer-lang">
+          <button class="lang-btn active">EN</button>
+          <button class="lang-btn">FR</button>
+          <button class="lang-btn">RU</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
