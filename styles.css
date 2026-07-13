@@ -350,6 +350,11 @@ p {
   position: absolute;
   inset: 0;
   z-index: 0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url('images/hero-visual.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-mesh {
